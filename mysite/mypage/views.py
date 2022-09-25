@@ -2,8 +2,10 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 
 
-class HomePage(TemplateView): # Выполняет рендеринг заданного шаблона с контекстом, содержащим параметры, захваченные в URL.
-    template_name = 'homepage.html'
+class HomePage(TemplateView):
+    '''Создаю представление на основе класса TemplateView'''
+
+    template_name = 'homepage.html' # Файл в котором находится тег-разметка моей страницы.
 
     def get_context_data(self, *args, **kwargs):
         context = super(HomePage, self).get_context_data(*args, **kwargs)

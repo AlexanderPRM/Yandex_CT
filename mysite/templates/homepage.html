@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мой сайт-визитка</title>
+    <link href="{%static 'css/blog.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/blog/">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <style>
+        p {
+        padding: 0;
+        margin-left: 40px;
+        }
+        h2 {
+            padding: 0;
+            margin-left: 40px;
+        }
+        h1 {
+            padding: 0;
+            margin-bottom: 40px;
+        }
+        #judo {
+            padding: 0;
+            width: 400px;
+            height: 300px;
+            border-style: inset;
+         }
+        #me {
+
+            width: 550px;
+            height: 500px;
+            border-style: inset;
+
+            ;
+        }
+       .line {
+           width: 100%;
+           border-width: 2px;
+           border-style: solid;
+       }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+                <nav>
+                </nav>
+        </div>
+    </header>
+    <div class="main_info">
+        <h1 align="center">
+            Начинающий веб-разработчик
+        </h1>
+        <hr class="line">
+    </div>
+    <div>
+        <h2>Обо мне</h2>
+        <hr class="line">
+        <p>
+            Здравствуйте, Я Пермяков Александр Александрович, проживаю в Красногорске, Московская область. <br>
+            Куда не так давно переехал с севера нашей страны, с Республики Саха (Якутия).<br>
+
+        <p/>
+
+        <p>
+            Обучаюсь в колледже на 2 курсе по направлению "Информационные системы и программирование",<br>
+            также в онлайн-школе "Нетология" по специальности "Python-разработчик с нуля" и "Python для анализа данных".<br>
+
+        <p/>
+        <img id='me' src="{% static 'img/me.jfif' %}" alt="me" border="5px">
+
+    </div>
+    <br size="50px">
+    <div class="hobbies">
+        <hr class="line">
+        <h2 id="hobbies-title">Увлечения</h2>
+        <hr class="line">
+        <p>
+            Одно из увлечений - это спорт, с самого детства в нём. Он подарил мне необыкновенный опыт в моей жизни.<br>
+            Благодаря ему я побывал в разных городах России и не только России, например
+            Токио и Улан-Батор.<br>Занимаюсь спортом дзюдо, разряд - КМС.
+            <br>
+        <p/>
+        <img id='judo' src="{% static 'img/ekaterinburg-competitions.jpg' %}" alt="photo" border="5px">
+        <p>
+        Ещё увлекает дайвинг и лыжный спорт, хоть ими и не удаётся так часто заниматься.
+        <p/>
+
+    </div>
+
+    <div class="programming">
+        <hr class="line">
+        <h2>Опыт в разработке</h2>
+        <hr class="line">
+        <p>
+            Основное увлечения на данный момент, это программирование. <br>
+            Серьезно начал заниматься в марте этого года и в это же время поступил в "Нетологию".<br>
+            Реализовывал программу которая с ведённого профиля ВКонтакте загружает какие-либо фото на введённый Яндекс.Диск<br>
+            Сейчас проходит небольшой командный проект по созданию чат-бота в ВКонтакте,
+            который должен искать пользователям подходящих людей по интересам.
+        <p/>
+        <p>
+            Знаком с реляционными базами данных такие как SQL и PostgreSQL. <br>
+            Проходил несколько программ по PostgeSQL и SQL.
+        <p/>
+        <p>
+            Опыта в верстке сайтов и работой с Django нет, это моя первая работа.<br>
+            Только начинаю учить Django, и тут встретил ваши интенсивы, которые бы мне очень помогли.<br>
+        </p>
+    </div>
+    <hr class="line">
+    <h2>
+        Спасибо
+    </h2>
+
+</body>
+</html>
